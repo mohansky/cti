@@ -1,0 +1,51 @@
+enable: true
+title: Our Team
+subtitle: >
+  Our Cycle Tours are inclined towards knitting the cycling experience to the destination, it’s people, their natural environment, indulging in new traditions, food, and language. Serving our patrons the usual cycling holiday special, packaged in an unforgettable journey.
+titles: Our Difference
+subtitles: >
+  Our Cycle Tours are inclined towards knitting the cycling experience to the destination, it’s people, their natural environment, indulging in new traditions, food, and language. Serving our patrons the usual cycling holiday special, packaged in an unforgettable journey.
+content:
+  
+
+  - icon: ion-map
+    name: Tailor-made
+    text: >
+      We customize our cycle tours based on our guest’s interests. If it matters to you it matters to us.
+
+  - icon: ion-leaf
+    name: Authentic experience
+    text: >
+      Our team has firsthand knowledge of the region. We seek out homestays wherever possible and we work with local communities.
+
+  - icon: ion-medkit
+    name: Safety & Reliability
+    text: >
+      When it comes to safety, we leave no stone unturned. Our experienced guides are trained on first aid.
+
+  - icon: ion-earth
+    name: Environmental responsibility
+    text: >
+      We are very committed to making travel more sustainable and responsible. We realize tourism has both a positive and a negative impact on the places we visit. We strive to reduce our carbon footprint and leave no trace.
+
+team:
+
+  - image: "img/teams/Daniel.jpg"
+    name: Daniel
+    text: >
+      Ever since I first visited the Indian sub-continent, I have been fascinated with the juxtaposition of tradition and modernity, the contrasts of daily life and of Indian history and the Himalayas. Planning travels and seeking out new destinations is like second nature to me.
+
+  - image: "img/teams/Mohan.jpg"
+    name: Mohan
+    text: >
+      Cycling for me meant freedom. There is no better way to spend a day than to head out on my cycle and explore the countryside. 
+
+  - image: "img/teams/Raw.jpg"
+    name: Raw
+    text: >
+      Cycle Tours India gives me the opportunity to pursue my dreams while working with some of my closest friends. When I’m not planning the next ride into the countryside with CTI, I pursue my other calling as a serious aquarist and help friends and interested folk setup aquariums. 
+
+  - image: "img/teams/Vasanth.jpg"
+    name: Vasanth
+    text: >
+      Having always had a passion towards outdoors, I found myself a place in the travel industry. I worked as an Operations Manager with one of the leading adventure tour operators in India before starting Cycle Tours India. 

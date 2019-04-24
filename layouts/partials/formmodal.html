@@ -1,0 +1,45 @@
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-main" data-toggle="modal" data-target="#myModal" style="width: 100%; padding: 0px 0px 0px -40px;">Book Tour</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h1 class="modal-title"> {{ .Params.title }} </h1>
+        <h4>&nbsp; {{ .Params.subtitle }}</h4>
+      </div>
+      <div class="modal-body text-center">
+        <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+          <label> <input type="hidden" name="{{ .Params.title }} {{ .Params.subtitle }}" /></label>   
+          <p>
+              <label>Name: <input type="text" name="name" /></label>   
+            </p>
+            <p>
+              <label>Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+              <label>Phone: <input type="phone" name="phone" /></label>
+            </p>
+          
+            <p>
+              <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit" class="btn btn-main">Send</button>
+            </p>
+          
+          </form>
+
+      </div>
+      <!--
+      <div class="modal-footer">
+        <button type="button" class="btn btn-main" data-dismiss="modal">Close</button>
+      </div> -->
+    </div>
+
+  </div>
+</div>

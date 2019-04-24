@@ -1,0 +1,40 @@
+enable: true
+title: Testimonials
+paragraph: >
+  A few kind words from our guests about their experiences with us.
+
+numbers:
+  - icon: ion-ios-chatboxes-outline
+    counter: 2000
+    text: Cups of Coffee
+  - icon: ion-ios-glasses-outline
+    counter: 2000
+    text: Cups of Coffee
+  - icon: ion-ios-compose-outline
+    counter: 2000
+    text: Cups of Coffee
+  - icon: ion-ios-timer-outline
+    counter: 2000
+    text: Cups of Coffee
+
+people:
+  - text: >
+      Back in Blighty. Excellent flight home with great views over Pakistan, Iran and Turkmenistan. Thank you all for your company over the last 4 weeks. It's not about the bike, but the journey and who you share that experience with. Couldn't have wished for a better group. Thank you to Morris for initiating the trip and inviting me, Erika for the back office organisation.  Vasanth for such superb leadership and faultless execution, but admirably supported by a brilliant team in Saurabh, Baba, Shafi and Shameer. Until next time.... Thank you
+    image: img/item-img11.jpg
+    name: Tom
+    role:  
+  - text: >
+      Thanks everyone for having me , supporting me , helping me up the climbs and through the tough days , listening to my aged babbling and stories . It's been an absolute privilege and honour to be be with you all for the past few weeks . I am awakened. 
+    image: img/item-img12.jpg
+    name: Dennis
+    role:  
+  - text: >
+      This was a nice way to see this part of the country. You guys did a great job of putting the whole trip together. The organization and execution were both professional and enjoyable.
+    image: img/item-img11.jpg
+    name: Ethan
+    role:  
+  - text: >
+      My last morning in India - I hope not for long - Thank you all for having me come along on this journey EZ I dont know how to thank you for all the amazing ,beautiful ,touching and difficult things I got to see . I feel I got to really experience a piece of this incredible country and have been so touched by the gentle kindness and spirituality  of the people we came across. Thank you to the DR Baba and Shafi and Shameer for taking such good care of us —- and the great playlists🎸🎤 on our bus Rides !! Julie
+    image: img/item-img13.jpg
+    name: Julie
+    role:  

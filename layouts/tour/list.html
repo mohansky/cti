@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{ partial "head.html" . }}
+</head>
+<body>
+
+	{{ partial "header.html" . }}
+
+	{{ partial "global-header.html" . }}
+
+<section class="blog section">
+	<div class="container">
+		<div class="row">
+			{{ range (.Paginator 6).Pages }}
+
+<div class="col-md-4">
+	<a href="{{ .Permalink }}" >
+	<article class="tour-post">
+		{{ with .Params.image }}
+		<img src="{{ . | absURL }}" class="img-responsive" alt="thumb"> {{ end }}
+		<a class="tour-title" href="{{ .Permalink }}"><h2>{{ .Title }}</h2></a>
+		<br>
+		<a class="tour-subtitle" href="{{ .Permalink }}"><h4>{{ .Params.subtitle }}</h4></a>
+		<br>
+	
+	<ul>	
+		<li> 
+		<div class="itinicon">
+		<i class="ion-ios-partlysunny"></i></div>
+		<div class="list-text">
+		Best Time
+		<span> {{ .Params.season }} </span>
+		</div></li>
+			
+			
+		<li>
+		<div class="itinicon">
+		<i class="ion-android-bicycle"></i>
+		</div>
+		<div class="list-text">
+		Total Days / Cycling Days
+		<span> {{ .Params.days }} </span>
+		</div> </li>
+			
+			
+		<li><div class="itinicon"> <i class="ion-plane"></i></div> 
+		<div class="list-text"> 
+		Airport In/ Out 
+		<span> {{ .Params.airportin }} / {{ .Params.airportout }} </span>
+		</div></li>
+			 
+			   
+		<li>
+		<div class="itinicon">
+		<i class="ion-social-usd"></i>
+		</div>
+		<div class="list-text">
+		Cost
+		<span> {{ .Params.cost }}</span>
+		</div>
+		</li>
+	</ul>
+		
+	<a href="{{ .Permalink }}" class="btn btn-main">Full Itinerary</a>
+	</article> </a>
+	</div>
+	{{ end }}
+</div>
+
+</div> 
+
+	<div class="col-12 text-center">
+		{{ template "_internal/pagination.html" . }}
+		</div>
+	</div>
+
+	<!-- Clients Logo Section Start  -->
+<section id="clients-logo-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div id="clients-logo" class="owl-carousel">
+            {{ range .Site.Data.work.clients }}
+            <div class="clients-logo-img">
+              <a href="{{ .url }}"><img src="{{ $.Site.BaseURL }}{{ .image }}" alt="Features"></a>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</section>
+
+{{ if isset .Site.Data.work "call" }}
+  {{ partial "call-to-action.html" .Site.Data.work.call }}
+{{ end}}
+
+
+	{{ partial "footer.html" . }}
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+enable: true
+title: Just some of our latest projects.
+subtitle: Don’t just take our word for it. Check out some of our latest work.
+
+portfolio:
+  - category: Karnataka
+    url: "#"
+    image: "/img/portfolio/work1.jpg"
+    name: Karnataka 16 days
+    description: >
+      Cycling in The Western Ghats in 16 days $ 2399 onwards  
+  - category: Meghalaya 
+    url: "#"
+    image: "/img/portfolio/work1.jpg"
+    name: Meghalaya 8 days
+    description: >
+     Cycling in the Abode of Clouds in 8 days $ 899 onwards 
+  - category: Sikkim 
+    url: "#"
+    image: "/img/portfolio/work1.jpg"
+    name: Sikkim  in 12 days
+    description: >
+     The Monastic Trail in 12 days $ 1199 onwards
+  - category: Arunachal Pradesh 
+    url: "#"
+    image: "/img/portfolio/work1.jpg"
+    name: Eastern Arunachal Pradesh 15 Days 
+    description: >
+     The Mishmi Hills Traverse $ 2199 onwards
+  - category: Kerala
+    url: "/tour/kerala/"
+    image: "/img/portfolio/work1.jpg"
+    name: Kerala 14 days 
+    description: >
+     Gods own Country in 14 days $ 2499 onwards
+    
+
+clients:
+  - image: "/img/portfolio/arunachal/arunachal1.jpg"
+  - image: "/img/portfolio/arunachal/arunachal2.jpg"
+  - image: "/img/portfolio/arunachal/arunachal1.jpg"
+  - image: "/img/portfolio/arunachal/arunachal2.jpg"
+  - image: "/img/portfolio/arunachal/arunachal3.jpg"
+  - image: "/img/portfolio/arunachal/arunachal1.jpg"
+  - image: "/img/portfolio/arunachal/arunachal2.jpg"
+  - image: "/img/portfolio/arunachal/arunachal1.jpg"
+  - image: "/img/portfolio/arunachal/arunachal3.jpg"
+  - image: "/img/portfolio/arunachal/arunachal2.jpg"
+  - image: "/img/portfolio/arunachal/arunachal1.jpg"
+  - image: "/img/portfolio/arunachal/arunachal3.jpg"
+  - image: "/img/portfolio/arunachal/arunachal2.jpg"
+  

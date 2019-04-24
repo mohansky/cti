@@ -1,0 +1,61 @@
+{{ partial "global-header.html" . }}
+
+<!-- Service Start -->
+<section id="team">
+  <div class="container">
+
+    <!-- Intro -->
+    <div class="row">
+        <div class="section-title">
+          <h2>{{ .Site.Data.team.title }}</h2>
+          <p>{{ .Site.Data.team.subtitle }}</p>
+        </div>
+      </div>
+
+    <!-- Content -->
+    <div class="row">
+        {{ range .Site.Data.team.team }}
+        <div class="col-sm-6 col-md-3">
+          <div class="team-item">
+            <img src="{{ $.Site.BaseURL }}{{ .image }}" alt="Pepole">
+            <h4>{{ .name }}</h4>
+            <p>{{ .text }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    </section>  
+
+    <br><br>
+
+    {{ if and (isset .Site.Params "call") (.Site.Params.call.enable) }}
+		{{ partial "call-to-action.html" . }}
+	  {{ end }}
+
+    <section id="team">
+        <div class="container">  
+    <!-- Intro -->
+    <div class="row">
+      <div class="section-title">
+        <h2>{{ .Site.Data.team.titles }}</h2>
+        <p>{{ .Site.Data.team.subtitles }}</p>
+      </div>
+    </div>
+
+ 
+
+    <!-- Content -->
+    <div class="row">
+      {{ range .Site.Data.team.content }}
+      <div class="col-sm-6 col-md-3">
+        <div class="team-item">
+          <i class="{{ .icon }}"></i>
+          <h4>{{ .name }}</h4>
+          <p>{{ .text }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

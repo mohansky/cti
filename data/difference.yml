@@ -1,0 +1,51 @@
+enable: true
+title: Our Team
+subtitle: >
+  Our Cycle Tours are inclined towards knitting the cycling experience to the destination, it’s people, their natural environment, indulging in new traditions, food, and language. Serving our patrons the usual cycling holiday special, packaged in an unforgettable journey.
+titles: Our Difference
+subtitles: >
+  Our Cycle Tours are inclined towards knitting the cycling experience to the destination, it’s people, their natural environment, indulging in new traditions, food, and language. Serving our patrons the usual cycling holiday special, packaged in an unforgettable journey.
+content:
+  
+
+  - icon: ion-cut
+    name: Tailor-made
+    text: >
+      We customize our cycle tours based on our guest’s interests. If it matters to you it matters to us.
+
+  - icon: ion-leaf
+    name: Authentic experience
+    text: >
+      Our team has firsthand knowledge of the region. We seek out homestays wherever possible and we work with local communities.
+
+  - icon: ion-medkit
+    name: Safety & Reliability
+    text: >
+      When it comes to safety, we leave no stone unturned. Our experienced guides are trained on first aid.
+
+  - icon: ion-earth
+    name: Environmental responsibility
+    text: >
+      We are very committed to making travel more sustainable and responsible. We realize tourism has both a positive and a negative impact on the places we visit. We strive to reduce our carbon footprint and leave no trace.
+
+team:
+
+  - icon: ion-compass
+    name: Tailor-made
+    text: >
+      We customize
+
+  - icon: ion-leaf
+    name: Authentic experience
+    text: >
+      Our team has
+
+  - icon: ion-planet
+    name: Safety & Reliability
+    text: >
+      When it comes 
+
+  - icon: ion-earth
+    name: Environmental responsibility
+    text: >
+      We are very 

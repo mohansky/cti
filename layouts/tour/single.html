@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{ partial "head.html" . }}
+</head>
+
+<body>
+
+<!--	{{ partial "header.html" . }} -->
+
+	{{ partial "header.html" . }}
+
+	<!-- Itin layout start-->
+	<div class="post itinlist">
+	  		
+			<section id="intro" style="border: 1px dotted #ddd;">
+			<div class="container">
+			<div class="row">
+			<div>
+<!--itintitle -->							
+	<div class="container">
+	<div class="row">
+	<div class="col-sm-12">
+   	<div class="block itintitle">
+		<h1>&nbsp; {{ .Params.title }}</h1>
+		<h4>&nbsp; &nbsp; {{ .Params.subtitle }}</h4><br>
+	</div>
+	</div>
+
+<!--itinoverview -->	
+<div class="col-sm-12"  >
+	
+<div class="col-sm-4 itinoverveiw" >
+	
+	<ul>
+							
+	<li> <div class="itinicon">
+	<i class="ion-ios-partlysunny"></i></div>
+    <div class="list-text">
+	Best Time
+	<span> {{ .Params.season }} </span>
+	</div></li>
+							
+							
+	<li>
+	<div class="itinicon">
+	<i class="ion-android-bicycle"></i>
+	</div>
+	<div class="list-text">
+	Total Days / <br>Cycling Days
+	<span> {{ .Params.days }} </span>
+	</div> </li>
+							
+							
+	<li><div class="itinicon"> <i class="ion-plane"></i></div> 
+	<div class="list-text"> 
+	Airport In/ Out 
+	<span> {{ .Params.airportin }} / {{ .Params.airportout }} </span>
+	</div></li>
+							  
+																		   
+	<li>
+	<div class="itinicon">
+	<i class="ion-ios-speedometer"></i>
+	</div>
+	<div class="list-text">
+	Level
+	<span> {{ .Params.level }}</span>
+	</div>
+	</li>
+																							   
+	<li>
+	<div class="itinicon">
+	<i class="ion-android-home"></i>
+	</div>
+	<div class="list-text">
+	Accomadaion
+	<span> {{ .Params.accomodation }}</span>
+	</div>
+	</li>
+										   
+	<li>
+	<div class="itinicon">
+	<i class="ion-social-usd"></i>
+	</div>
+	<div class="list-text">
+	Cost
+	<span> {{ .Params.cost }}</span>
+	</div>
+	</li>
+	
+	</ul>
+	<br><br><br><br>	
+	{{ partial "formmodal.html" . }}
+	
+	
+	
+	</div>
+
+		 
+<!--itinimg  -->	
+
+		<div class="col-sm-8">
+
+		{{ partial "itinslider.html" . }}
+
+		</div> 
+	</div>
+	 
+
+
+<!--itin desc highlight and table -->
+	
+	<div class="col-sm-12 contint">
+		<br><br>
+	{{ .Content }} 
+	</div> </div>
+
+	<hr>
+
+	</div>
+	</div>
+	</div>
+	</div>
+	</section>
+
+
+	
+<!-- Footer start-->
+	<p class="center-text" style="padding: 30px;">
+	  <a class="btn btn-main" href="{{ $.Site.BaseURL }}/tour">Back to all Tours</a>
+	</p>
+
+	{{ if and (isset .Site.Params "call") (.Site.Params.call.enable) }}
+		{{ partial "call-to-action.html" . }}
+	{{ end }}
+
+	{{ partial "footer.html" . }}
+</body>
+</html>
