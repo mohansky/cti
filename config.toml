@@ -1,0 +1,108 @@
+title = "Cycle Tours India"
+baseURL = "/"
+languageCode = "en-us"
+theme = "airspace-hugo"
+
+[menu]
+
+  [[menu.header]]
+    weight = 2
+    name = "Our Tours"
+    url = "/tour"
+  [[menu.header]]
+    weight = 4
+    name = "Blog"
+    url = "/blog"
+  [[menu.header]]
+    weight = 3
+    name = "Our Team"
+    url = "/team"
+  [[menu.header]]
+    weight = 5
+    name = "Contact"
+    url = "/contact"
+
+  [[menu.footer]]
+    weight = 1
+    name = "About us"
+    url = "/team"
+  [[menu.footer]]
+    weight = 2
+    name = "Contact us"
+    url = "/contact"
+  [[menu.footer]]
+    weight = 3
+    name = "Tours"
+    url = "/tour"
+  [[menu.footer]]
+    weight = 4
+    name = "Blog"
+    url = "/blog"
+  [[menu.footer]]
+    weight = 5
+    name = "Terms"
+    url = "/terms"
+
+# The sites parameters
+[params]
+
+  # If you want to remove the copyright text you need a Themefisher license.
+  # This license is offered with a 50% discount for all Hugo users.
+  # For information see https://github.com/gohugoio/hugoThemes/issues/260
+
+  dateFormat = "6 January 2006"
+
+  home = "Home"
+
+  [params.slider]
+    enable = true
+    title = "Cycle Tours India"
+    subtitle = "Experience India on cycles!"
+
+  [params.wrapper]
+    enable = true
+    title = "About Us"
+    italic = "As Cycle Tours India, we create immaculate journeys for passionate cyclists, who join us from India and around the world! Together, we’ve covered the most verdant parts of India, soaking in her ever-changing texture and unique terrain, and more-likely we go off-track from the taken path. Our Cycle Tours are routed around capturing the essence of India, pit-stop in a breathless view like you have never seen before. Our Cycling Holiday plans vary from 3 to 20 days. We bring along the most sophisticated cycles, gear to follow, as-per intensity of the ride (with our back up team – who are more than well equipped to foresee, avoid and solve any issue on our cycling expeditions)."
+    italic1 = "Since our inception, we’ve successfully – needless to say passionately – covered Cycling Holidays through exotic locations across the Indian subcontinent, we’ve cycled across the Golden Triangle, Rajasthan; pushed the limits on our enchanting cycling journey via Sikkim, Meghalaya and Arunachal Pradesh in Northeast India; and Down South India we’ve explored Cycling routes through Goa, Karnataka, and Kerala."
+    italic2 = "Our Cycle Tours are inclined towards knitting the cycling experience to the destination, it’s people, their natural environment, indulging in new traditions, food, and language. Serving our patrons the usual cycling holiday special, packaged in an unforgettable journey."
+    italic3 = "If you are a cycling enthusiast geared-up to discover a piece of India’s natural beauty, through un-traveled paths – join us on a Cycling Holiday!"
+
+    paragraph = " "
+
+  [params.blog]
+    enable = true
+    title = "Get The Latest On What We're doing"
+    subtitle = "Catch up with us, anytime and anywhere"
+
+  [params.feature]
+    enable = true
+    title = " Join us on a Cycling Holiday!"
+    content = " "
+    [params.feature.button]
+      caption = "View Tours"
+      url = "/tour"
+
+  [params.call]
+    enable = true
+    title = "We design delightful cycling experiences."
+    paragraph = " "
+
+  [params.contact]
+    enable = true
+    title = "Drop us a note"
+    subtitle = "Don’t just take our word for it. Check out some of our latest work."
+    [params.contact.form]
+      name = "Your name"
+      email = "Your email"
+      subject = "Your subject"
+      message = "Your message"
+      button = "Send message"
+    [params.contact.box]
+      title = "Get in touch!"
+      address = "Bangalore, India"
+      email = "Email: info@cycletoursindia.com"
+      phone = "Phone: +91 986 233 8466 | +91 886 139 8666"
+
+  
+    [params.contact.gmaps]
+      title = "We Also Count in Google Maps"
