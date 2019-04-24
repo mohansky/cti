@@ -1,0 +1,363 @@
+/*
+ * This css file includes styles added in the jekyll port of this theme.
+ * To find the original style.css that ships with Airspace, read airspace.css
+ *
+ */
+
+ .italic {
+   font-style: italic;
+ }
+
+ .bold {
+   font-weight: bold;
+ }
+
+ .center-text {
+   text-align: center;
+ }
+
+/* Tour List Page */
+
+.tour-post{
+  display: grid;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  border-radius: 4px;
+  border-bottom: 2px solid;
+  border-top: 2px solid;
+  margin: 10px 10px 10px 0px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); 
+   
+  }
+
+.tour-post:hover {  
+  transform: scale(1.03);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.tour-post img{
+  margin-bottom: 0px;
+  width: 100%;
+}
+.tour-post p{
+  margin: 15px 0 20px;
+}
+
+.tour-title{
+  display: block;
+  color: rgb(68, 68, 68);
+  font-size: 25px;
+  font-weight: 600;
+  padding-left: 25px;
+  
+  }
+
+.tour-subtitle{
+  display: block;
+  color: rgb(68, 68, 68);
+  padding-left: 25px;
+  font-size: 16px;
+  font-weight: 300;
+  padding-bottom: 20px;
+  } 
+  
+  .tour-post ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px 10px 10px;
+    justify-content: center;    
+    }
+  
+  .tour-post li {
+    display: flex;
+    flex: 1 0 8em;
+    padding: 5px;
+
+     
+  }
+
+  .tour-post .itinicon {
+    font-size: 2em;
+    justify-self: center; 
+    align-self: center;
+    padding: 10px 10px;
+    text-align: center;
+    }
+
+  .tour-post  span {
+    font-size: 1em;
+    justify-self: center; 
+    align-self: center;
+    padding: 10px 0px;
+    text-align: center;
+  }
+
+
+
+
+/* Tour Single Page */
+
+
+.itinoverveiw {
+  background: #ffffff;
+  padding: 58px 20px 20px 20px;
+  border-radius: 3px;
+  border: 0px solid #000;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3); 
+  }
+
+.itinoverveiw ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+
+.itinoverveiw li {
+  display: flex;
+  flex: 1 0 12em;
+  padding: 5px;
+  border: 0px solid #000;
+  
+   
+}
+
+.itinicon{
+    font-size: 2.5em;
+    justify-self: center; 
+    align-self: center;
+    padding: 10px 10px;
+    text-align: center;
+    }
+
+
+.list-text
+{
+  padding-top: 10px;
+  text-align: center;
+  font-size: .8em;
+  
+}
+
+.list-text span
+{
+  display: block; 
+  font-size: 110%;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 1.8em;
+}
+
+
+
+/* Tour Single Page Text Description */
+
+.desc
+{
+  padding: 20px;
+  justify-content: center;
+  margin: 10px;
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px; /* Firefox */
+  column-gap: 40px;
+  font: 100;
+  
+   
+}	
+
+@media screen and (max-width: 720px) {
+.desc {
+  padding: 20px;
+  justify-content: center;
+  -webkit-column-count: 0; /* Chrome, Safari, Opera */
+  -moz-column-count: 0; /* Firefox */
+  column-count: 1;
+  font: 100;
+  }
+}
+
+.contint p {
+    font: 100;
+
+}
+
+/* Tour Single Page Highlights */
+
+.high {
+  font: 100;
+  background: #fdfdfd;
+  padding-left: 25px;
+  padding: 25px;
+  border-radius: 4px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3); 
+  align-content: left;
+  
+  
+}
+
+/* Itin Table */
+
+.table{
+  display: grid;
+}
+
+@media screen and (max-width: 340px){
+.table {
+  display: block;
+}
+}
+.thead{
+  height: 200px;
+
+}
+
+.tr, th, td {
+  border-top: 2px solid rgb(41, 40, 40);
+  border-bottom: 2px solid rgb(41, 40, 40);
+  padding: 5px;
+  text-align: left;
+   
+}
+
+.th, td {
+  padding: 15px 15px 15px 15px;
+  text-align: left;
+}
+
+.table tr:nth-child(even) {
+  background-color: rgb(230, 230, 230);
+}
+
+.table tr:nth-child(odd) {
+ background-color: #fff;
+}
+
+.table th {
+  background-color: #c1c1c1;
+  
+}
+
+
+
+
+  
+
+  /* Slide show*/
+
+.carousel .slide {
+  margin: 10px; 
+  background-color: #333;
+}  
+
+.carousel-inner {
+  height: 100%; 
+}
+
+.item {
+  width: 100%;  
+ }
+
+.item img {
+  width: 100%;
+  height: 100%;  
+ }
+
+
+.blogimg {
+  padding: 10px;
+  border: 10px;
+} 
+
+.modal {
+color: #0D0017;
+}
+
+
+
+/* Social Media Icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+/* Add a hover effect if you want */
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+
+/* Image Gallery */   
+
+.gallery {
+  margin: 10px 5px;
+}   
+
+.gallery img{
+  transition: 1s;
+  padding: 5px;
+  width: 220px;
+}
+
+.gallery img:hover{
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
