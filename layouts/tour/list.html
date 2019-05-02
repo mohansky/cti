@@ -19,7 +19,7 @@
 	<article class="tour-post">
 		{{ with .Params.image }}
 		<img src="{{ . | absURL }}" class="img-responsive" alt="thumb"> {{ end }}
-		<a class="tour-title" href="{{ .Permalink }}"><h2>{{ .Title }}</h2></a>
+		<a class="tour-title" href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
 		<br>
 		<a class="tour-subtitle" href="{{ .Permalink }}"><h4>{{ .Params.subtitle }}</h4></a>
 		<br>
