@@ -1,5 +1,5 @@
 title = "Cycle Tours India"
-baseURL = "/"
+baseURL = "https://cycletoursindia.com/"
 languageCode = "en-us"
 theme = "airspace-hugo"
 
