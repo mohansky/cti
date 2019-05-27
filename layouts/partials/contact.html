@@ -1,38 +1,11 @@
 {{ partial "global-header.html" . }}
 
-<!-- contact form start  -->
+<!-- contact form start -->
 {{ with .Site.Params.contact }}
 <section id="contact-form">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-sm-12">
-        <div class="block">
-          <form name="contact" method="POST" data-netlify="true">
-            <div class="form-group">
-              <input type="text" class="form-control"  name="name" placeholder="{{ .form.name }}"/>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="email" placeholder="{{ .form.email }}"/>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" placeholder="{{ .form.subject }}"/>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="block">
-          <form>
-            <div class="form-group-2">
-              <textarea class="form-control" rows="3"  name="message" placeholder="{{ .form.message }}"></textarea>
-            </div>
-            <button class="btn btn-default" type="submit">{{ .form.button }}</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div id="contact-box" class="row">
-      <div class="col-md-6 col-sm-12">
+    <div class="container">
+        <div class="row">
+    <div class="col-md-6 col-sm-12">
         <div class="block">
 
           <h2>{{ .box.title }}</h2>
@@ -56,8 +29,33 @@
           </ul>
         </div>
       </div>
-      <!-- maps start -->
+
+ 
       <div class="col-md-6 col-sm-12">
+        <div class="block">
+
+        <form name="contact" method="POST" data-netlify="true">
+        <div class="form-group">
+        <input type="text"  class="form-control" name="name" placeholder="Your Name" />   
+        </div>
+        <div class="form-group">
+        <input type="email"  class="form-control" name="email" placeholder="Your Email" /> 
+        </div>
+        <div class="form-group-2">
+        <textarea  class="form-control"  rows="3" name="message" placeholder="Your Message"></textarea>
+        </div>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+    </div>
+  </div>
+ 
+ 
+<div id="contact-box" class="row">
+    
+      <!-- maps start -->
+      <div class="col-lg-12  ">
         {{ with .gmaps}}
         <div class="block">
           <h2>{{ .title }}</h2>
