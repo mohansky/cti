@@ -1,6 +1,6 @@
 {{ partial "global-header.html" . }}
 
-<!-- contact form start -->
+<!-- contact form start 
 
 <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
   <p>
@@ -13,7 +13,7 @@
   <p>
     <button type="submit">Send</button>
   </p>
-</form>
+</form> -->
 
 
 {{ with .Site.Params.contact }}
@@ -22,11 +22,8 @@
     <div class="row">
       <div class="col-md-6 col-sm-12">
         <div class="block">
-          <form name="contactpage" method="post"  data-netlify="true"  data-netlify-recaptcha="true">
-            <p class="hidden">
-            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-            </p>
-            <div class="form-group">
+          <form name="contactpage" method="POST"  data-netlify="true"  data-netlify-recaptcha="true">
+             <div class="form-group">
               <input type="text" class="form-control" placeholder="Your Name">
             </div>
             <div class="form-group">
