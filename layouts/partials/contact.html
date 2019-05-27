@@ -1,44 +1,21 @@
 {{ partial "global-header.html" . }}
 
 <!-- contact form start  -->
-<div class="container">
-    <div class="row">
-      <div class="col-md-6 col-sm-12">
-        <div class="block">
-<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-  <p class="hidden">
-    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-  </p>
-  <p>
-    <label>Email: <input type="text" name="email" class="form-control" /></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
-       </div>
-      </div>
-      
-      
-
 {{ with .Site.Params.contact }}
 <section id="contact-form">
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-sm-12">
         <div class="block">
-          <form name="contactpage" method="POST"  data-netlify="true"  data-netlify-recaptcha="true">
-             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your Name">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control"  name="name" placeholder="{{ .form.name }}">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your Email">
+              <input type="text" class="form-control" name="email" placeholder="{{ .form.email }}">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your Subject">
+              <input type="text" class="form-control" name="subject" placeholder="{{ .form.subject }}">
             </div>
           </form>
         </div>
@@ -47,10 +24,9 @@
         <div class="block">
           <form>
             <div class="form-group-2">
-              <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+              <textarea class="form-control" rows="3"  name="message" placeholder="{{ .form.message }}"></textarea>
             </div>
-             
-            <button class="btn btn-default" type="submit">Send</button>
+            <button class="btn btn-default" type="submit">{{ .form.button }}</button>
           </form>
         </div>
       </div>
