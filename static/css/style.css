@@ -348,6 +348,26 @@ color: #0D0017;
 
 
 
+/* Modal Form */
+#myModal{
+  background-color: #393e4dc5;
+  
+}
+
+.modal-body input{
+  border: none;
+  border-bottom: 2px solid #393e4d;
+  width: 80%;
+}
+
+.modal-body textarea{
+  border: none;
+  border-bottom: 2px solid #393e4d;
+  width: 80%;
+  height: 3rem;
+  resize: none;
+}
+
 
 
 
