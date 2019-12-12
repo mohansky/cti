@@ -17,18 +17,26 @@
           <input type="hidden" name="_cc" value="mohansky@gmail.com" />
           <label> <input type="hidden" name="{{ .Params.title }} {{ .Params.subtitle }}" /></label>   
           <p>
-              <label>Name: <input type="text" name="name" /></label>   
+               <input type="text" name="name" placeholder="Name" required/>   
             </p>
             <p>
-              <label>Email: <input type="email" name="email" /></label>
+              <input type="email" name="email"  placeholder="Email" required/> 
             </p>
             <p>
-              <label>Phone: <input type="phone" name="phone" /></label>
+               <input type="phone" name="phone" placeholder="Phone" /> 
             </p>
-          
             <p>
-              <label>Message: <textarea name="message"></textarea></label>
-            </p>
+                <input type="people" name="people" placeholder="No. of People" /> 
+                </p>
+            <p>
+                 <small>Preffered Start date</small> <br>
+              <input type="date" name="date" placeholder="Preffered Start date" /> 
+              
+           </p>
+           
+
+            <p>
+              <textarea name="message" placeholder="Your Message" required></textarea>
             <p>
               <button type="submit" class="btn btn-main">Send</button>
             </p>
